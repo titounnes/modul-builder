@@ -6,7 +6,8 @@ class Create extends CI_Controller {
     {
         parent::__construct();
 
-        if( ! $this->input->is_cli_request())
+        //if( ! $this->input->is_cli_request())
+        if( ! is_cli())
         {
             show_404();
         }
